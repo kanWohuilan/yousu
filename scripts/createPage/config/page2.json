@@ -1,0 +1,24 @@
+{
+  "name": "role-manage",
+  "title": "角色管理",
+  "route": "/system-manage/role-manage",
+  "parmas": [
+    {
+      "name": "id",
+      "title": "id",
+      "type": "string",
+      "validate": [],
+      "form": true
+    },
+    {
+      "name": "name",
+      "title": "角色名",
+      "type": "string",
+      "validate": [],
+      "required": true
+    }
+  ],
+  "requestUrl": "/api/role",
+  "types": "Auth.Role",
+  "operate": ["delete", "add", "modify"]
+}

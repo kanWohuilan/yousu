@@ -1,0 +1,36 @@
+{
+  "name": "eripheralFacility-manage",
+  "title": "周边设施管理",
+  "route": "/eripheralFacility-manage",
+  "menuMeta": {
+    "icon": "",
+    "requiresAuth": true,
+    "singleLayout": "basic",
+    "order": 6
+  },
+  "requestUrl": "",
+  "parmas": [
+    {
+      "name": "id",
+      "title": "id",
+      "type": "string",
+      "validate": [],
+      "form": true
+    },
+    {
+      "name": "username",
+      "title": "用户名",
+      "type": "string",
+      "validate": [],
+      "required": true
+    },
+    {
+      "name": "password",
+      "title": "密码",
+      "type": "string",
+      "validate": ""
+    }
+  ],
+  "types": "EripheralFacility",
+  "operate": ["delete", "add", "modify"]
+}

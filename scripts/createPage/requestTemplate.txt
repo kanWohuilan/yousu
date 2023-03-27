@@ -1,0 +1,16 @@
+import { request } from '@/service/request';
+
+export function fetch#{name}#List() {
+  return request.get<BasePage.Page<#{type}#>>('#{url}#/page-list');
+}
+
+export function add#{name}#(data: #{type}#) {
+  return request.post<void>('#{url}#', data);
+}
+
+export function edit#{name}#(data: #{type}#) {
+  return request.put<void>('#{url}#', data);
+}
+export function delete#{name}#(id: string) {
+  return request.delete<void>('#{url}#', { params: { id } });
+}

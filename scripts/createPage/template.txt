@@ -1,0 +1,8 @@
+<script setup lang="ts">
+import CommonTable from '~/src/components/common/CommonTable/index.vue';
+</script>
+<template>
+  <n-card title="#{title}#" :bordered="false" class="rounded-16px shadow-sm hfull">
+    <CommonTable />
+  </n-card>
+</template>
